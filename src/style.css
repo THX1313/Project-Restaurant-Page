@@ -1,0 +1,23 @@
+
+
+.content {
+   width: 100svw;
+   background: url('./icon.png');
+  }
+
+/* .icon {
+   width: 100svw;
+} */
+
+  .welcome,
+  .tagline {
+   text-align: center;
+   margin: 2em;
+   font-size: 2em;
+  }
+
+  .description {
+   margin: auto;
+   width: 80svw;
+   line-height: 2.5;
+  }
