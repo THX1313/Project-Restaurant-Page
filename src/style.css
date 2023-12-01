@@ -1,19 +1,25 @@
 
-
-.content {
+* {
+   margin: 0;
+   padding: 0;
+}
+/* .content {
    width: 100svw;
+   overflow-x: hidden;
    background: url('./icon.png');
-  }
+  } */
 
-/* .icon {
-   width: 100svw;
-} */
+.icon {
+   max-width: 100%;
+}
 
   .welcome,
   .tagline {
    text-align: center;
    margin: 2em;
    font-size: 2em;
+   /* margin: auto;
+   width: 80svw; */
   }
 
   .description {
