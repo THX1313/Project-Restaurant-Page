@@ -1,27 +1,27 @@
-// Create a bare-bones homepage for a restaurant. Include an image, headline, and some copy about how wonderful the restaurant is.
+import pageLoad from './pageLoad';
 
-import './style.css';
-import Icon from './icon.png';
+pageLoad();
 
-const container = document.querySelector('#content');
+// basic implementation of tabbed browsing in html/js
+/* <div id="container">
+  <div id="page1">Content of page 1</div>
+  <div id="page2">Content of page 2</div>
+  <div id="page3">Content of page 3</div>
+</div>
+<button onclick="showPage('page1')">Page 1</button>
+<button onclick="showPage('page2')">Page 2</button>
+<button onclick="showPage('page3')">Page 3</button>
 
-const welcome = document.createElement('div');
-welcome.classList.add("welcome");
-welcome.textContent = "Welcome to Bette's Oceanview Diner";
+<script>
+function showPage(pageId) {
+  const container = document.getElementById("container");
+  const pages = container.querySelectorAll("div");
 
-const tagline = document.createElement('div');
-tagline.classList.add("tagline");
-tagline.textContent = "The Premier Diner in Berkeley, CA";
+  for (const page of pages) {
+    page.style.display = "none";
+  }
 
-const description = document.createElement('div');
-description.classList.add("description");
-description.textContent = "Bette's Oceanview Diner is the best diner in Berkeley, CA. If you are in the mood for quality food, we have some delicious items for you. We are insistent on only using fresh and high-quality ingredients, and our bakery is the perfect place to spend time with your friends and family. We are known for our outstanding food and service, providing our guests with a dining experience they will never forget";
-
-const myIcon = new Image();
-myIcon.src = Icon;
-myIcon.classList.add("icon");
-
-container.appendChild(myIcon);
-container.appendChild(welcome);
-container.appendChild(tagline);
-container.appendChild(description);
+  const selectedPage = document.getElementById(pageId);
+  selectedPage.style.display = "block";
+}
+</script> */

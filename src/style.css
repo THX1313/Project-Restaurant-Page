@@ -3,11 +3,6 @@
    margin: 0;
    padding: 0;
 }
-/* .content {
-   width: 100svw;
-   overflow-x: hidden;
-   background: url('./icon.png');
-  } */
 
 .icon {
    max-width: 100%;
@@ -18,8 +13,6 @@
    text-align: center;
    margin: 2em;
    font-size: 2em;
-   /* margin: auto;
-   width: 80svw; */
   }
 
   .description {
