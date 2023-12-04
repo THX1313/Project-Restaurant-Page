@@ -33,5 +33,4 @@ const createRestaurantHomePage = () => {
     content.appendChild(pageContent);
 };
 
-// remember that every function that is imported into another js file needs this line of code. 
 export default createRestaurantHomePage; // try with no default
