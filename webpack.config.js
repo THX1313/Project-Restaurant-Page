@@ -27,7 +27,7 @@ module.exports = {
 
   plugins: [
     new HtmlWebpackPlugin({
-      inject: false,
+      inject: false, //without this line, <script src="main.js"></script> was being placed in the head as well as the body element.
       template: './src/template.html'
     }),
   ],

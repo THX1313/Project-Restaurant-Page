@@ -6,11 +6,11 @@ const createRestaurantHomePage = () => {
     
     const content = document.querySelector('#content');
 
+    const pageContent = document.createElement('div');
+    pageContent.classList.add("page-content");
+
     const welcome = document.createElement('div');
     welcome.classList.add("welcome");
-
-    welcome.classList.add("pageContent"); // for adding and removing
-
     welcome.textContent = "Welcome to Bette's Oceanview Diner";
 
     const tagline = document.createElement('div');
@@ -25,11 +25,13 @@ const createRestaurantHomePage = () => {
     myIcon.src = Icon;
     myIcon.classList.add("icon");
 
-    content.appendChild(myIcon);
-    content.appendChild(welcome);
-    content.appendChild(tagline);
-    content.appendChild(description); 
-}
+    pageContent.appendChild(myIcon);
+    pageContent.appendChild(welcome);
+    pageContent.appendChild(tagline);
+    pageContent.appendChild(description);
+
+    content.appendChild(pageContent);
+};
 
 // remember that every function that is imported into another js file needs this line of code. 
 export default createRestaurantHomePage; // try with no default
